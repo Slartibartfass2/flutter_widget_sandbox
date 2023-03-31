@@ -1,2 +1,3 @@
 # flutter_widget_sandbox
-Sandbox for Flutter widgets
+
+Sandbox for flutter widgets
