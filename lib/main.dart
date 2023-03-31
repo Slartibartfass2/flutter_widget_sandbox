@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/toggle_list_element.dart';
+
 void main() => runApp(const WidgetSandboxApp());
 
 class WidgetSandboxApp extends StatelessWidget {
@@ -24,6 +26,18 @@ class MainPage extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Widget Sandbox"),
         ),
-        body: const Placeholder(),
+        body: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 400, vertical: 20),
+          child: Column(
+            children: [
+              ToggleListElement(
+                title: "Element",
+                color: Colors.amber,
+                activeColor: Colors.orange[800],
+                onChanged: (isToggledOn) {},
+              ),
+            ],
+          ),
+        ),
       );
 }
